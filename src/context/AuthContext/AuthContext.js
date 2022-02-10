@@ -76,6 +76,7 @@ function AuthProvider({ children }) {
       if (!auth.user) {
         // check if there is a user in the session of the server
         const { data } = await isLoggedIn();
+        console.log("user", data);
         // update the state with the user
         setAuth({ user: data });
         // save the user in browser session memory
