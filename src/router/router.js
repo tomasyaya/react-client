@@ -8,10 +8,10 @@ import { ROUTES } from ".";
 function AppRouter() {
   return (
     <Switch>
-      <GuestRoute path={ROUTES.login} exact>
+      <GuestRoute path={ROUTES.login}>
         <Auth isLogin={true} />
       </GuestRoute>
-      <GuestRoute path={ROUTES.signup} exact>
+      <GuestRoute path={ROUTES.signup}>
         <Auth />
       </GuestRoute>
       <AppRoute exact path={ROUTES.main}>
